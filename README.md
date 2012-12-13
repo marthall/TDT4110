@@ -1,1 +1,1 @@
-This is where I put my code for this subject at NTNU.
+This is where I put my code for TDT4110 at NTNU.
