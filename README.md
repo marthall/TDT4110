@@ -1,1 +1,0 @@
-This is where I put my code for TDT4110 at NTNU.

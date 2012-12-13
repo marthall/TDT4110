@@ -1,0 +1,6 @@
+print("Oppgave 1a)")
+print("Den binære ASCII-verdien til 'A' er 1000001 og titallsverdien er 65")
+print("Oppgave 1b)")
+print("Lisp")
+print("Oppgave 1c)")
+print("Metadata er tabeller, rader, indekser og lignende")
