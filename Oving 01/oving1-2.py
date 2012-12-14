@@ -12,9 +12,9 @@ r = binomial_coefficent(4,2)
 s = binomial_coefficent(11,1)
 t = binomial_coefficent(4,1)
 
-possible_two_pairs = q*(r**2)*s*t
+two_pairs = q*(r**2)*s*t
 possible_hands = 2598960
-prob = 100*possible_two_pairs/possible_hands
+prob = 100*two_pairs/possible_hands
 
 
 print("%.2f%%" % prob)

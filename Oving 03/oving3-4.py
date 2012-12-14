@@ -1,20 +1,20 @@
-def pris(alder):
-	if alder < 5:
-		return ("Gratis")
-	elif alder >= 6 and alder <= 15:
+def pris(age):
+	if age < 5:
+		return ("Free")
+	elif age >= 6 and age <= 15:
 		return ("10 kr")
-	elif alder >= 16 and alder <= 20:
+	elif age >= 16 and age <= 20:
 		return ("20 kr")
-	elif alder >= 21 and alder <= 25:
+	elif age >= 21 and age <= 25:
 		return ("30 kr")
-	elif alder >= 26 and alder <= 60:
+	elif age >= 26 and age <= 60:
 		return ("40 kr")
-	elif alder > 60:
-		return ("Gratis")
+	elif age > 60:
+		return ("Free")
 
-def skriv(alder):
-	a = pris(alder)
-	print("Pris: " + a)
+def write(age):
+	a = price(age)
+	print("Price: " + a)
 
-alder = int((input("Alder: ")))
-skriv(alder)
+age = int(input("age: "))
+write(age)
