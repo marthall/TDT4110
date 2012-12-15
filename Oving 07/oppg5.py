@@ -8,7 +8,7 @@ def is_prime(number):
     return True
 
 def separate(tall, threshold):
-    return [[i for i if i < threshold], [i for i if i >= threshold]]
+    return [[i for i in tall if i < threshold], [i for i in tall if i >= threshold]]
 
 # oppg 5a
 print("-------------------------------")
