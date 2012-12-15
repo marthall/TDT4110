@@ -6,7 +6,6 @@ def gcd(a, b):
 	return a
 
 def reduce_fraction(a,b):
-	a_ny, b_ny = 0,0
 	kort_teller = a / gcd(a,b)
 	kort_nevner = b / gcd(a,b)
 	return kort_teller, kort_nevner
