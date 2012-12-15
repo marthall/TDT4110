@@ -19,22 +19,22 @@ infected_cheeses = []
 infected_vaults = ["A234", "A235", "B13", "B15", "C31"]
 
 def a():
-  return(cheeses["port salut"])
+    return(cheeses["port salut"])
 
 def b(ch, inf_ch, inf_va):
-  for i in range(len(ch.items())):
-    for j in inf_va:
-      for k in list(ch.items())[i][1]:
-        if j in k:
-          inf_ch.append(list(ch.keys())[i])
-  return(set(inf_ch))
+    for i in range(len(ch.items())):
+        for j in inf_va:
+            for k in list(ch.items())[i][1]:
+                if j in k:
+                    inf_ch.append(list(ch.keys())[i])
+    return(set(inf_ch))
 
 def c(ch, inf_ch, inf_va):
-  inf = list(b(ch, inf_ch, inf_va))
-  for i in list(ch.items()):
-    if i[0] not in inf:
-      for j in i[1]:
-        print("%-10s\t%s" % (j,i[0]))
+    inf = list(b(ch, inf_ch, inf_va))
+    for i in list(ch.items()):
+        if i[0] not in inf:
+            for j in i[1]:
+                print("%-10s\t%s" % (j,i[0]))
 
 
 print(a())

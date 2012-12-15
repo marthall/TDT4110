@@ -1,11 +1,11 @@
 def binomial_coefficent(n, k):
-	return factorial(n)/(factorial(k)*factorial(n-k))
+    return factorial(n)/(factorial(k)*factorial(n-k))
 
 def factorial(n):
-	fac = 1
-	for i in range(n,0,-1):
-		fac *= i
-	return fac
+    fac = 1
+    for i in range(n,0,-1):
+        fac *= i
+    return fac
 
 q = binomial_coefficent(13, 2)
 r = binomial_coefficent(4,2)
