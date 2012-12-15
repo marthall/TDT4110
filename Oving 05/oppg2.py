@@ -14,13 +14,13 @@ def user_input(question, valid_answer):
 			None
 	# Checks for valid answer and calls itself if not.
 	if answer not in valid_answer:
-			print("Ikke gyldig svar. Prøv igjen")
+			print("Ikke gyldig svar. Prov igjen")
 			return(user_input(question, old_valid_answer))
 	return answer
 
 # gets the gender from the user.
 def gender():
-	gender = user_input("Hvilket kjønn(m/k) er du? ", ["m", "k"])
+	gender = user_input("Hvilket kjonn(m/k) er du? ", ["m", "k"])
 	return gender
 
 # Checks if user is in the valid age group.
@@ -29,7 +29,7 @@ def is_valid_age():
 	if 15 < age < 25:
 		return True
 	else:
-		print("Du er ikke i den tiltenkte målgruppen.")
+		print("Du er ikke i den tiltenkte malgruppen.")
 		False
 
 # Checks if user is active on social media.
@@ -53,7 +53,7 @@ def is_on_facebook(gender):
 		return False
 # Returns number of hours on social media per day.
 def hours_active():
-	hours = user_input("Hvor mange timer bruker du i snitt daglig på sosiale medier? ", "num")
+	hours = user_input("Hvor mange timer bruker du i snitt daglig pa sosiale medier? ", "num")
 	return hours
 
 # Prints out result and exits the program.
@@ -69,8 +69,8 @@ def quit_program():
 	exit()
 
 def welcome():
-	print("Velkommen til spørreundersøkelse.")
-	print("Du kan til enhver tid avslutte ved å skrive 'hade'")
+	print("Velkommen til sporreundersokelse.")
+	print("Du kan til enhver tid avslutte ved a skrive 'hade'")
 	input("")
 
 def main():
