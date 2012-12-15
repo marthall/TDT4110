@@ -11,13 +11,8 @@ def equal(streng1, streng2):
 print(equal("hei", "he"))
 
 def reverse(streng):
-    streng = list(streng)
-    streng_list = []
-    for i in streng:
-        streng_list.insert(0, i)
-    streng = "".join(streng_list)
-    return streng
-
+    return streng[::-1]
+    
 print(reverse("hei"))
 
 def palindrom(streng):
